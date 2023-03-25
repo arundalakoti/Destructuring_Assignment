@@ -2,11 +2,12 @@
 //1. Count the occurrences.
 let enteredString = "";
 document.getElementById("inputString").addEventListener("change", (e) => {
-  enteredString="";
+  enteredString = "";
   enteredString += e.target.value;
+  console.log(enteredString);
 });
 
-function CountOccurrences(){
+function CountOccurrences() {
   const occurrences = new Map();
 
   for (let i = 0; i < enteredString.length; i++) {
@@ -22,7 +23,7 @@ function CountOccurrences(){
 }
 
 document.getElementById("countOccurrences").addEventListener("click", () => {
-  console.log(countOccurrences());
+  console.log(CountOccurrences());
 });
 /**************************************************************************************************** */
 
