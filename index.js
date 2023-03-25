@@ -4,7 +4,6 @@ let enteredString = "";
 document.getElementById("inputString").addEventListener("change", (e) => {
   enteredString = "";
   enteredString += e.target.value;
-  console.log(enteredString);
 });
 
 function CountOccurrences() {
